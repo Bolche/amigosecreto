@@ -1,7 +1,5 @@
 #!/usr/bin/env perl
-
 use Getopt::Std;
-
 
 getopts('thr:');
 
@@ -35,10 +33,10 @@ else
 }
 srand($rseed);
 $_= <>;
-my %nomes  = split(/\n/);		# terse, heh?
+my %nomes  = split(/\n/);
 
 # nomes e parceiros
-my @aux = keys %nomes;
+my @aux = sort keys %nomes;
 my @p=();
 
 # sorteia 
